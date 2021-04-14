@@ -241,3 +241,19 @@ ol:first-child {
 .theme-dark .light-btn {
     display: none;
 }
+
+/* mobile */
+
+@media screen and (max-width: 980px) {
+    body {
+        padding-top: 70px;
+    }
+    #navbar {
+        height: 70px;
+        box-shadow: 0 2px 8px var(--box-shadow);
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}
