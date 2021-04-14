@@ -12,7 +12,10 @@
         <title>swaggy wishlist</title>
     </head>
     <body>
+
+
         <!-- Navbar -->
+
         <div id="navbar">
             <button class="menu-bars" id="show-menu" aria-label="show-menu">
             <i data-feather="menu"></i>
@@ -41,8 +44,24 @@
             </ul>
             </div>
             </ul>
+
+
+            <!-- Light / Dark mode-->
+
+            <div class="button-selector">
+                <button class="dark-btn" id="theme-light"> 
+                <i data-feather="moon"></i>
+                </button>
+                <button class="light-btn" id="theme-light"> 
+                <i data-feather="sun"></i>
+                </button>
+            </div>
+            </div>
         </nav>
+
+
         <!-- Wishlist -->
+
         <div id='write' class=''>
             <h1><a name="info"></a><span>Info</span></h1>
             <hr />
@@ -563,7 +582,10 @@
             <hr />
             <br />
         </div>
+
+
         <!-- Feather Icons-->
+
         <script src="https://unpkg.com/feather-icons"></script>
         <script src="app.js"></script>
         <script>
@@ -571,4 +593,16 @@
         </script>
     </body>
 </html>
+
+
+<!-- Disable Darkreader ( if you have darkreader on but a light windows system, youre stupid, dont blame me.)-->
+
+<script>
+    const observer = new MutationObserver((mutationsList) => {
+        for(const mutation of mutationsList) {
+            if (mutation.addedNodes[0] && mutation.addedNodes[0].classList?.contains('darkreader')) mutation.addedNodes[0].remove()
+        }
+    });
+    observer.observe(document.head, {childList: true});
+</script>
 

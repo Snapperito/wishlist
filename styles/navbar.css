@@ -1,5 +1,3 @@
-
-
 #navbar {
     background-color: var(--bg-color);
     height: 100px;
@@ -9,6 +7,13 @@
     position: fixed;
 }
 
+button {
+    background-color: var(--bg-color);
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+}
+
 button:focus {
     outline: none;
 }
@@ -16,11 +21,8 @@ button:focus {
 .menu-bars {
     margin-left: 2rem;
     font-size: 1rem;
-    color: var(--text-color) !important;
     background: transparent;
-    border: none;
     padding: 0;
-    cursor: pointer;
     shape-rendering: crispEdges;
 }
 
@@ -35,7 +37,7 @@ button:focus {
     left: -100%;
     transition: 850ms;
     z-index: 199;
-    box-shadow: 5px 5px 13px #D3D3D3;
+    box-shadow: 5px 5px 13px var(--box-shadow);
     position: fixed;
 }
 
@@ -46,6 +48,7 @@ button:focus {
 #nav-menu.active {
     left: 0;
     transition: 350ms;
+    transition-property: left;
 }
 
 .nav-text {
@@ -96,4 +99,3 @@ button:focus {
     font-weight: 500;
     margin-left: 30px;
 }
-

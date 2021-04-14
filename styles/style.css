@@ -1,7 +1,8 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-:root {
+
+/* light and dark themes */
+
+.theme-light {
     --bg-color: #ffffff;
     --text: #0C0C0C;
     --text-select: #b5d6fc;
@@ -10,6 +11,19 @@
     --table-alt: #f8f8f8;
     --linebreak: #e7e7e7;
     --scroller: #c1c1c1;
+    --box-shadow: #D3D3D3;
+}
+
+.theme-dark {
+    --bg-color: #292A2B;
+    --text: #E6E6E6;
+    --text-select: #414754;
+    --link: #82BFFC;
+    --table-border: #555555;
+    --table-alt: #2B2D2E;
+    --linebreak: #e7e7e7;
+    --scroller: #363738;
+    --box-shadow: #2F2F2F;
 }
 
 
@@ -211,3 +225,19 @@ ol:first-child {
     margin-top: 0;
 }
 
+
+/* light & dark mode */
+
+.button-selector {
+    position: absolute;
+    top: 90.5rem;
+    right: 12.5rem;
+}
+
+.theme-light .dark-btn {
+    display: none;
+}
+
+.theme-dark .light-btn {
+    display: none;
+}
