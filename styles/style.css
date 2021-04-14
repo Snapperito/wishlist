@@ -230,8 +230,8 @@ ol:first-child {
 
 .button-selector {
     position: absolute;
-    top: 90.5rem;
-    right: 12.5rem;
+    top: 96.5%;
+    right: 70.5%;
 }
 
 .theme-light .dark-btn {
@@ -242,9 +242,10 @@ ol:first-child {
     display: none;
 }
 
+
 /* mobile */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1100px) {
     body {
         padding-top: 70px;
     }
