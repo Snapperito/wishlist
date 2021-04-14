@@ -1,0 +1,213 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root {
+    --bg-color: #ffffff;
+    --text: #0C0C0C;
+    --text-select: #b5d6fc;
+    --link: #5580e4;
+    --table-border: #dfe2e5;
+    --table-alt: #f8f8f8;
+    --linebreak: #e7e7e7;
+    --scroller: #c1c1c1;
+}
+
+
+/* main page */
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+#write {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-bottom: 100px;
+    height: auto;
+    width: inherit;
+    word-break: normal;
+    overflow-wrap: break-word;
+    position: relative;
+    white-space: 1;
+    overflow-x: visible;
+}
+
+body {
+    color: var(--text);
+    margin: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.6;
+}
+
+html {
+    background-color: var(--bg-color);
+    font-family: "Inter", "思源黑体 CN";
+    font-size: 14px;
+}
+
+br {
+    user-select: none;
+}
+
+
+/* tables */
+
+figure {
+    overflow-x: auto;
+    margin: 1.2em 0px;
+    max-width: calc(100% + 16px);
+    padding: 0px;
+}
+
+figure>table {
+    margin: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+    overflow: auto;
+    break-inside: auto;
+    text-align: left;
+    padding: 0;
+    word-break: initial;
+}
+
+table tr td {
+    border: 1px solid var(--table-border);
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table tr th {
+    font-weight: bold;
+    border: 1px solid var(--table-border);
+    border-bottom: 0px;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table tr:nth-child(2n),
+thead {
+    background-color: var(--table-alt);
+}
+
+p,
+ul,
+table {
+    margin: 0.8em 0;
+}
+
+
+/* linebreaks */
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--linebreak);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+
+/* headers */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    font-weight: 600 !important;
+}
+
+h1 {
+    padding-bottom: 0.1em;
+    font-size: 2.25em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+
+h2:hover:before,
+h1:hover:before,
+h3:hover:before {
+    content: "#";
+    width: 0px;
+    position: absolute;
+    left: -24px;
+    opacity: 0.1;
+}
+
+strong {
+    font-weight: 600;
+}
+
+
+/* links */
+
+a {
+    text-decoration: none;
+    color: var(--link);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--link);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--link);
+}
+
+
+/* text select */
+
+::selection {
+    background: var(--text-select);
+}
+
+
+/* scroller */
+
+*::-webkit-scrollbar {
+    background: transparent;
+    width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--scroller);
+    border-radius: 4px;
+}
+
+
+/* lists */
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
