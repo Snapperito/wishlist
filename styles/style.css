@@ -232,6 +232,7 @@ ol:first-child {
     position: absolute;
     top: 96.5%;
     right: 70.5%;
+    z-index: 2;
 }
 
 .theme-light .dark-btn {
