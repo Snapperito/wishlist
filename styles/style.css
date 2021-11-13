@@ -75,10 +75,12 @@ figure {
     margin: 1.2em 0px;
     max-width: calc(100% + 16px);
     padding: 0px;
+    
 }
 
 figure>table {
     margin: 0px;
+    
 }
 
 table {
@@ -90,11 +92,11 @@ table {
     text-align: left;
     padding: 0;
     word-break: initial;
-    border-radius: 4px;
 
 }
 
 table tr td {
+    
     border: 1px solid var(--table-border);
     margin: 0;
     padding: 6px 13px;
