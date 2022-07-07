@@ -1,172 +1,159 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>miles' wishlist</title>
 
-<title>miles' wishlist</title>
+    <link rel="shortcut icon" type="image/ico" href="uri" />
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" type="image/ico" href="uri" />
-<link rel="stylesheet" href="index.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<meta name="HandheldFriendly" content="true">
+    <meta name="HandheldFriendly" content="true">
 
 </head>
-    <body>
 
+<body>
 
-        
-        <div class="container">
-            <a href="https://www.apple.com/shop/buy-mac/macbook-air" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/macbook-air.png" class="photo" alt="macbook-air">
-                
-                <div class="content">
-                    <p class="title">Macbook Air M2</p>
-                    <p class="description">expensive but would help with workflow + provide a mobile space for graphic design / development.</p>
+    <div class="container">
+        <a href="https://www.apple.com/shop/buy-mac/macbook-air" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/macbook-air.png" class="photo" alt="macbook-air">
 
-                    <div class="info">
-                        <i data-feather="dollar-sign" class="link" alt="link"></i>
-                        <p>1,899</p>
-                        <i data-feather="info" class="link" alt="link"></i>
-                        <p>midnight • 16gb • 1tb</p>
-                    </div> 
+            <div class="content">
+                <p class="title">Macbook Air M2</p>
+                <p class="description">expensive but would help with workflow + provide a mobile space for graphic design / development.</p>
+
+                <div class="info">
+                    <i data-feather="dollar-sign" class="link" alt="link"></i>
+                    <p>1,899</p>
+                    <i data-feather="info" class="link" alt="link"></i>
+                    <p>midnight • 16gb • 1tb</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="container">
+        <a href="https://www.discogs.com/wantlist?page=1&limit=250&user=milesreed" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/vinyl.png" class="photo" alt="vinyl">
+
+            <div class="content">
+                <p class="title">Vinyl</p>
+                <p class="description">list of vinyl wants , can usually find outside of discogs by just googling.</p>
+
+                <div class="info">
+                    <i data-feather="dollar-sign" class="link" alt="link"></i>
+                    <p>~</p>
+                    <i data-feather="info" class="link" alt="link"></i>
+                    <p>~</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div data-popup-target="#popup" class="container">
+        <a>
+            <img src="/assets/popups/paragon.png" class="photo" alt="computer">
+
+            <div class="content">
+                <p class="title">Keyboard</p>
+                <p class="description">Finishing touches for my endgame keyboard</p>
+
+                <div class="info">
+                    <i data-feather="dollar-sign" class="link" alt="link"></i>
+                    <p>770</p>
+                    <i data-feather="info" class="link" alt="link"></i>
+                    <p>~</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-header">
+            <div class="title">Keyboard Build</div>
+            <button data-close class="close">&times;</button>
+        </div>
+        <div class="popup-body">
+            <a>
+                <div class="popup-container" id="purchased">
+                    <div class="popup-info">
+                        <img class="popup-photo" src="assets/popups/paragon.png">
+                        <p class="popup-title">Base</p>
+                        <p class="popup-description">Paragon75</p>
+                        <p class="popup-price">$ 480</p>
+                        <div id="purchased"></div>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="popup-container" id="purchased">
+                    <div class="popup-info">
+                        <img class="popup-photo" src="assets/popups/gmkalpine.png">
+                        <p class="popup-title">Keycaps</p>
+                        <p class="popup-description">GMK Alpine</p>
+                        <p class="popup-price">$ 170</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.primekb.com/products/alpaca-linears?variant=37633188855971" target="_blank" rel="noopener noreferrer">
+                <div class="popup-container">
+                    <div class="popup-info">
+                        <img class="popup-photo" src="assets/popups/alpacas.png">
+                        <p class="popup-title">Switches</p>
+                        <p class="popup-description">Minterly Alpacas</p>
+                        <p class="popup-price">$ 50</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://divinikey.com/products/durock-v2-stabilizers-screw-in?variant=32275866615873" target="_blank" rel="noopener noreferrer">
+                <div class="popup-container">
+                    <div class="popup-info">
+                        <img class="popup-photo" src="assets/popups/durockv2.png">
+                        <p class="popup-title">Stabalizers</p>
+                        <p class="popup-description">Durock v2</p>
+                        <p class="popup-price">$ 20</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://keebstuff.com/collections/build-to-order" target="_blank" rel="noopener noreferrer">
+                <div class="popup-container">
+                    <div class="popup-info">
+                        <img class="popup-photo" src="assets/popups/cable.png">
+                        <p class="popup-title">Coiled Cable</p>
+                        <p class="popup-description">Keebstuff Custom</p>
+                        <p class="popup-price">$ 50</p>
+                    </div>
                 </div>
             </a>
         </div>
+    </div>
+    <div id="overlay"></div>
 
-        <div class="container">
-            <a href="https://www.discogs.com/wantlist?page=1&limit=250&user=milesreed" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/vinyl.png" class="photo" alt="vinyl">
-                
-                <div class="content">
-                    <p class="title">Vinyl</p>
-                    <p class="description">list of vinyl wants , can usually find outside of discogs by just googling.</p>
+    <!-- Feather Icons-->
 
-                    <div class="info">
-                        <i data-feather="dollar-sign" class="link" alt="link"></i>
-                        <p>~</p>
-                        <i data-feather="info" class="link" alt="link"></i>
-                        <p>~</p>
-                    </div> 
-                </div>
-            </a>
-        </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="/app.js"></script>
+    <script>
+        feather.replace()
+    </script>
 
-        <div class="container">
-            <a href="https://www.discogs.com/wantlist?page=1&limit=250&user=milesreed" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/vinyl.png" class="photo" alt="vinyl">
-                
-                <div class="content">
-                    <p class="title">Vinyl</p>
-                    <p class="description">list of vinyl wants , can usually find outside of discogs by just googling.</p>
+    <!-- Disable Darkreader -->
 
-                    <div class="info">
-                        <i data-feather="dollar-sign" class="link" alt="link"></i>
-                        <p>~</p>
-                        <i data-feather="info" class="link" alt="link"></i>
-                        <p>~</p>
-                    </div> 
-                </div>
-            </a>
-        </div>
+    <script>
+        const observer = new MutationObserver((mutationsList) => {
+            for(const mutation of mutationsList) {
+                if (mutation.addedNodes[0] && mutation.addedNodes[0].classList?.contains('darkreader')) mutation.addedNodes[0].remove()
+            }
+        });
+        observer.observe(document.head, {childList: true});
+    </script>
+</body>
 
-        <div class="container">
-            <a href="https://www.discogs.com/wantlist?page=1&limit=250&user=milesreed" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/vinyl.png" class="photo" alt="vinyl">
-                
-                <div class="content">
-                    <p class="title">Vinyl</p>
-                    <p class="description">list of vinyl wants , can usually find outside of discogs by just googling.</p>
-
-                    <div class="info">
-                        <i data-feather="dollar-sign" class="link" alt="link"></i>
-                        <p>~</p>
-                        <i data-feather="info" class="link" alt="link"></i>
-                        <p>~</p>
-                    </div> 
-                </div>
-            </a>
-        </div>
-
-        <div class="container">
-            <a href="https://www.discogs.com/wantlist?page=1&limit=250&user=milesreed" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/vinyl.png" class="photo" alt="vinyl">
-                
-                <div class="content">
-                    <p class="title">Vinyl</p>
-                    <p class="description">list of vinyl wants , can usually find outside of discogs by just googling.</p>
-
-                    <div class="info">
-                        <i data-feather="dollar-sign" class="link" alt="link"></i>
-                        <p>~</p>
-                        <i data-feather="info" class="link" alt="link"></i>
-                        <p>~</p>
-                    </div> 
-                </div>
-            </a>
-        </div>
-
-        <div class="container">
-            <a href="https://www.discogs.com/wantlist?page=1&limit=250&user=milesreed" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/vinyl.png" class="photo" alt="vinyl">
-                
-                <div class="content">
-                    <p class="title">Vinyl</p>
-                    <p class="description">list of vinyl wants , can usually find outside of discogs by just googling.</p>
-
-                    <div class="info">
-                        <i data-feather="dollar-sign" class="link" alt="link"></i>
-                        <p>~</p>
-                        <i data-feather="info" class="link" alt="link"></i>
-                        <p>~</p>
-                    </div> 
-                </div>
-            </a>
-        </div>
-
-        <div class="container">
-            <a href="https://www.discogs.com/wantlist?page=1&limit=250&user=milesreed" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/vinyl.png" class="photo" alt="vinyl">
-                
-                <div class="content">
-                    <p class="title">Vinyl</p>
-                    <p class="description">list of vinyl wants , can usually find outside of discogs by just googling.</p>
-
-                    <div class="info">
-                        <i data-feather="dollar-sign" class="link" alt="link"></i>
-                        <p>~</p>
-                        <i data-feather="info" class="link" alt="link"></i>
-                        <p>~</p>
-                    </div> 
-                </div>
-            </a>
-        </div>
-        
-        
-
-        <!-- Feather Icons-->
-
-        <script src="https://unpkg.com/feather-icons"></script>
-        <script src="/app.js"></script>
-        <script>
-            feather.replace()
-        </script>
-
-        <!-- Disable Darkreader -->
-
-<script>
-    const observer = new MutationObserver((mutationsList) => {
-        for(const mutation of mutationsList) {
-            if (mutation.addedNodes[0] && mutation.addedNodes[0].classList?.contains('darkreader')) mutation.addedNodes[0].remove()
-        }
-    });
-    observer.observe(document.head, {childList: true});
-</script>
-    </body>
 </html>
