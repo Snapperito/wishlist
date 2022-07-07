@@ -65,11 +65,12 @@ a {
 	padding: 1rem;
 	border-radius: 0.4rem;
 	transform: scale(0);
-	width: 90%;
-	max-height: 80%;
+	width: 100%;
+	height: 100%;
 	z-index: 10;
-	transition: 150ms ease-in-out;
+	transition: 150ms fade;
 	overflow: scroll;
+	transition: 150ms ease-in-out;
 }
 
 .popup.active {
@@ -146,6 +147,7 @@ a {
 	opacity: 0;
 	top: 0;
 	left: 0;
+	left: 0;
 	right: 0;
 	bottom: 0;
 	background-color: rgba(0, 0, 0, .5);
@@ -170,6 +172,7 @@ a {
 
 .popup {
 	max-width: 600px;
+	max-height: 80%;
 }
 
 .popup-container {

@@ -2,9 +2,9 @@ const openpopupButtons = document.querySelectorAll('[data-popup-target]')
 const closepopupButtons = document.querySelectorAll('[data-close]')
 const overlay = document.getElementById('overlay')
 
-openpopupButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const popup = document.querySelector(button.dataset.popupTarget)
+openpopupButtons.forEach(div => {
+    div.addEventListener('click', () => {
+        const popup = document.querySelector(div.dataset.popupTarget)
         openpopup(popup)
     })
 })
@@ -16,9 +16,9 @@ overlay.addEventListener('click', () => {
     })
 })
 
-closepopupButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const popup = button.closest('.popup')
+closepopupButtons.forEach(div => {
+    div.addEventListener('click', () => {
+        const popup = div.closest('.popup')
         closepopup(popup)
     })
 })
