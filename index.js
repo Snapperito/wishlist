@@ -1,36 +1,143 @@
-const openpopupButtons = document.querySelectorAll('[data-popup-target]')
-const closepopupButtons = document.querySelectorAll('[data-close]')
-const overlay = document.getElementById('overlay')
+const x = window.matchMedia("(max-width: 700px)")
+const keyboard = document.querySelector('#keyboard')
+const merch = document.querySelector('#merch')
+const pc = document.querySelector('#pc')
+const keyboardContent = document.querySelector('#keyboard-content')
+const merchContent = document.querySelector('#merch-content')
+const pcContent = document.querySelector('#pc-content')
 
-openpopupButtons.forEach(div => {
-    div.addEventListener('click', () => {
-        const popup = document.querySelector(div.dataset.popupTarget)
-        openpopup(popup)
-    })
-})
+function resize(x) {
+    if (x.matches) { // If mobile
+        keyboard.addEventListener('click', () => {
+            new WinBox({
+                //config
+                title: "Endgame Keyboard Finishing Touches - $120",
+                mount: keyboardContent,
+                modal: true,
+                //appearance
+                background: "#26272e",
+                border: 3,
+                //pos
+                x: "center",
+                y: "center",
+                //dimensions
+                width: "100%",
+                height: "100%",
 
-overlay.addEventListener('click', () => {
-    const popups = document.querySelectorAll('.popup.active')
-    popups.forEach(popup => {
-        closepopup(popup)
-    })
-})
+            })
+        });
 
-closepopupButtons.forEach(div => {
-    div.addEventListener('click', () => {
-        const popup = div.closest('.popup')
-        closepopup(popup)
-    })
-})
+        merch.addEventListener('click', () => {
+            new WinBox({
+                //config
+                title: "Merch! ",
+                mount: merchContent,
+                modal: true,
+                //appearance
+                background: "#26272e",
+                border: 3,
+                //pos
+                x: "center",
+                y: "center",
+                //dimensions
+                width: "100%",
+                height: "100%",
 
-function openpopup(popup) {
-    if (popup == null) return
-    popup.classList.add('active')
-    overlay.classList.add('active')
+            })
+        });
+
+        pc.addEventListener('click', () => {
+            new WinBox({
+                //config
+                title: "PC Upgrade - $1040",
+                mount: pcContent,
+                modal: true,
+                //appearance
+                background: "#26272e",
+                border: 3,
+                //pos
+                x: "center",
+                y: "center",
+                //dimensions
+                width: "100%",
+                height: "100%",
+
+            })
+        });
+    } else { // If desktop
+        keyboard.addEventListener('click', () => {
+            new WinBox({
+                //config
+                title: "Endgame Keyboard Finishing Touches - $120",
+                mount: keyboardContent,
+                modal: true,
+                //appearance
+                background: "#26272e",
+                border: 3,
+                //viewport
+                top: 50,
+                right: 50,
+                bottom: 0,
+                left: 50,
+                //pos
+                x: "center",
+                y: "center",
+                //dimensions
+                width: "50%",
+                height: "80%",
+
+            })
+        });
+
+        merch.addEventListener('click', () => {
+            new WinBox({
+                //config
+                title: "Merch!",
+                mount: merchContent,
+                modal: true,
+                //appearance
+                background: "#26272e",
+                border: 3,
+                //viewport
+                top: 50,
+                right: 50,
+                bottom: 0,
+                left: 50,
+                //pos
+                x: "center",
+                y: "center",
+                //dimensions
+                width: "50%",
+                height: "80%",
+
+            })
+        });
+
+        pc.addEventListener('click', () => {
+            new WinBox({
+                //config
+                title: "PC Upgrade - $1040",
+                mount: pcContent,
+                modal: true,
+                //appearance
+                background: "#26272e",
+                border: 3,
+                //viewport
+                top: 50,
+                right: 50,
+                bottom: 0,
+                left: 50,
+                //pos
+                x: "center",
+                y: "center",
+                //dimensions
+                width: "50%",
+                height: "80%",
+
+            })
+        });
+    }
 }
 
-function closepopup(popup) {
-    if (popup == null) return
-    popup.classList.remove('active')
-    overlay.classList.remove('active')
-}
+resize(x)
+x.addEventListener("change", resize);

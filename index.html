@@ -2,34 +2,26 @@
 <html lang="en-us">
 
 <head>
-
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>miles' wishlist</title>
-
     <link rel="shortcut icon" type="image/ico" href="uri" />
-    <link rel="stylesheet" href="index.css">
-    <script defer src="index.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-    <meta name="HandheldFriendly" content="true">
-
+    <link rel="stylesheet" href="index.css" />
+    <script defer="" src="index.js"></script>
+    <script src="/winbox.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet" />
+    <meta name="HandheldFriendly" content="true" />
 </head>
 
 <body>
-
     <div class="container">
-        <a href="https://www.apple.com/shop/buy-mac/macbook-air" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/macbook-air.png" class="photo" alt="macbook-air">
-
+        <a href="https://www.apple.com/shop/buy-mac/macbook-air" target="_blank" rel="noopener noreferrer"> <img src="/assets/macbook-air.png" class="photo" alt="macbook-air" />
             <div class="content">
                 <p class="title">Macbook Air M2</p>
-                <p class="description">expensive but would help with workflow + provide a mobile space for graphic design / development.</p>
-
+                <p class="description">Expensive but would help with workflow + provide a mobile space for graphic design, development, and iacademy.</p>
                 <div class="info">
                     <i data-feather="dollar-sign" class="link" alt="link"></i>
                     <p>1,899</p>
@@ -39,15 +31,11 @@
             </div>
         </a>
     </div>
-
     <div class="container">
-        <a href="https://www.discogs.com/wantlist?page=1&limit=250&user=milesreed" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/vinyl.png" class="photo" alt="vinyl">
-
+        <a href="https://www.discogs.com/wantlist?page=1&amp;limit=250&amp;user=milesreed" target="_blank" rel="noopener noreferrer"> <img src="/assets/vinyl.png" class="photo" alt="vinyl" />
             <div class="content">
                 <p class="title">Vinyl</p>
-                <p class="description">list of vinyl wants , can usually find outside of discogs by just googling.</p>
-
+                <p class="description">List of vinyl wants , can usually find outside of discogs by just googling.</p>
                 <div class="info">
                     <i data-feather="dollar-sign" class="link" alt="link"></i>
                     <p>~</p>
@@ -57,95 +45,164 @@
             </div>
         </a>
     </div>
-
-    <div data-popup-target="#popup" class="container">
-        <a>
-            <img src="/assets/popups/paragon.png" class="photo" alt="computer">
-
+    <div id="keyboard" class="container">
+        <a> <img src="/assets/keyboard.png" class="photo" alt="computer" />
             <div class="content">
                 <p class="title">Keyboard</p>
                 <p class="description">Finishing touches for my endgame keyboard</p>
-
                 <div class="info">
                     <i data-feather="dollar-sign" class="link" alt="link"></i>
-                    <p>770</p>
+                    <p>120</p>
                     <i data-feather="info" class="link" alt="link"></i>
                     <p>~</p>
                 </div>
             </div>
         </a>
     </div>
-    <div class="popup" id="popup">
-        <div class="popup-header">
-            <div class="title">Keyboard Build</div>
-            <button data-close class="close">&times;</button>
-        </div>
-        <div class="popup-body">
-            <a>
-                <div class="popup-container" id="purchased">
-                    <div class="popup-info">
-                        <img class="popup-photo" src="assets/popups/paragon.png">
-                        <p class="popup-title">Base</p>
-                        <p class="popup-description">Paragon75</p>
-                        <p class="popup-price">$ 480</p>
-                        <div id="purchased"></div>
-                    </div>
-                </div>
-            </a>
-            <a>
-                <div class="popup-container" id="purchased">
-                    <div class="popup-info">
-                        <img class="popup-photo" src="assets/popups/gmkalpine.png">
-                        <p class="popup-title">Keycaps</p>
-                        <p class="popup-description">GMK Alpine</p>
-                        <p class="popup-price">$ 170</p>
-                    </div>
-                </div>
-            </a>
+    <div class="hidden-content">
+        <div id="keyboard-content">
+            <div class="win-item" id="purchased">
+                <p class="item-title">Base</p>
+                <p class="item-desc">Paragon75</p>
+                <p class="item-price">$480</p>
+            </div>
+            <div class="win-item" id="purchased">
+                <p class="item-title">Keycaps</p>
+                <p class="item-desc">GMK Alpine</p>
+                <p class="item-price">$170</p>
+            </div>
             <a href="https://www.primekb.com/products/alpaca-linears?variant=37633188855971" target="_blank" rel="noopener noreferrer">
-                <div class="popup-container">
-                    <div class="popup-info">
-                        <img class="popup-photo" src="assets/popups/alpacas.png">
-                        <p class="popup-title">Switches</p>
-                        <p class="popup-description">Minterly Alpacas</p>
-                        <p class="popup-price">$ 50</p>
-                    </div>
+                <div class="win-item">
+                    <p class="item-title">Switches</p>
+                    <p class="item-desc">Minterly Alpacas</p>
+                    <p class="item-price">$50</p>
                 </div>
             </a>
             <a href="https://divinikey.com/products/durock-v2-stabilizers-screw-in?variant=32275866615873" target="_blank" rel="noopener noreferrer">
-                <div class="popup-container">
-                    <div class="popup-info">
-                        <img class="popup-photo" src="assets/popups/durockv2.png">
-                        <p class="popup-title">Stabalizers</p>
-                        <p class="popup-description">Durock v2</p>
-                        <p class="popup-price">$ 20</p>
-                    </div>
+                <div class="win-item">
+                    <p class="item-title">Stabalizers</p>
+                    <p class="item-desc">Durock v2</p>
+                    <p class="item-price">$20 (4x 2u + 1x 7u)</p>
                 </div>
             </a>
             <a href="https://keebstuff.com/collections/build-to-order" target="_blank" rel="noopener noreferrer">
-                <div class="popup-container">
-                    <div class="popup-info">
-                        <img class="popup-photo" src="assets/popups/cable.png">
-                        <p class="popup-title">Coiled Cable</p>
-                        <p class="popup-description">Keebstuff Custom</p>
-                        <p class="popup-price">$ 50</p>
-                    </div>
+                <div class="win-item">
+                    <p class="item-title">Coiled Cable</p>
+                    <p class="item-desc">Keebstuff Custom</p>
+                    <p class="item-price">$50</p>
                 </div>
             </a>
         </div>
     </div>
-    <div id="overlay"></div>
-
+    <div id="pc" class="container">
+        <a> <img src="/assets/pc.png" class="photo" alt="pc" />
+            <div class="content">
+                <p class="title">PC Upgrade</p>
+                <p class="description">Upgrades to my current PC. Engame goal, not everything needs to be upgraded at once.</p>
+                <div class="info">
+                    <i data-feather="dollar-sign" class="link" alt="link"></i>
+                    <p>1,040</p>
+                    <i data-feather="info" class="link" alt="link"></i>
+                    <p>~</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="hidden-content">
+        <div id="pc-content">
+            <a href="https://pcpartpicker.com/list/DQPvcb" target="_blank" rel="noopener noreferrer">
+                <div class="win-item" id="special">
+                    <p class="item-title">PC Part Picker</p>
+                    <p class="item-desc">Complete item list &amp; buying options</p>
+                    <p class="item-price">$1040</p>
+                </div>
+            </a>
+            <div class="win-item">
+                <p class="item-title">CPU</p>
+                <p class="item-desc">Ryzen 5 5600x</p>
+                <p class="item-price">$157</p>
+            </div>
+            <div class="win-item">
+                <p class="item-title">Cooler</p>
+                <p class="item-desc">be quiet! Dark Rock Pro</p>
+                <p class="item-price">$89</p>
+            </div>
+            <div class="win-item">
+                <p class="item-title">Motherboard</p>
+                <p class="item-desc">MSI B550M-vc</p>
+                <p class="item-price">$109</p>
+            </div>
+            <div class="win-item">
+                <p class="item-title">RAM</p>
+                <p class="item-desc">Corsair Vengeance 16 gb</p>
+                <p class="item-price">$59</p>
+            </div>
+            <div class="win-item">
+                <p class="item-title">Video Card</p>
+                <p class="item-desc">Radeon RX 6800 XT</p>
+                <p class="item-price">$535</p>
+            </div>
+            <div class="win-item">
+                <p class="item-title">PSU</p>
+                <p class="item-desc">Corsair RM750</p>
+                <p class="item-price">$109</p>
+            </div>
+        </div>
+    </div>
+    <div id="merch" class="container">
+        <a> <img src="/assets/merch.png" class="photo" alt="merch" />
+            <div class="content">
+                <p class="title">Merchandise</p>
+                <p class="description">Anything from any of these categories! Collectables &amp; anything cool or displayable!</p>
+                <div class="info">
+                    <i data-feather="dollar-sign" class="link" alt="link"></i>
+                    <p>~</p>
+                    <i data-feather="info" class="link" alt="link"></i>
+                    <p>~</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="hidden-content">
+        <div id="merch-content">
+            <div class="win-item">
+                <p class="item-title">Movies</p>
+                <p class="item-desc">Any Studio Ghibli films.</p>
+                <p class="item-price"></p>
+            </div>
+            <div class="win-item">
+                <p class="item-title">TV Shows</p>
+                <p class="item-desc">Bojack Horseman, South Park, Gravity Falls, American Dad, Breaking Bad, Disenchantment.</p>
+                <p class="item-price">$170</p>
+            </div>
+            <div class="win-item">
+                <p class="item-title">Music</p>
+                <p class="item-desc">Tyler, SZA, Kendrick, Rihanna, Lorde, Mitski.</p>
+                <p class="item-price">$50</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a href="https://www.discogs.com/wantlist?page=1&amp;limit=250&amp;user=milesreed" target="_blank" rel="noopener noreferrer"> <img src="/assets/clothes.png" class="photo" alt="clothes" />
+            <div class="content">
+                <p class="title">Clothes</p>
+                <p class="description">Collection of Depop Clothes for a general idea. Some likes are for cay and not me, use better judgement lol.</p>
+                <div class="info">
+                    <i data-feather="dollar-sign" class="link" alt="link"></i>
+                    <p>~</p>
+                    <i data-feather="info" class="link" alt="link"></i>
+                    <p>~</p>
+                </div>
+            </div>
+        </a>
+    </div>
     <!-- Feather Icons-->
-
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="/app.js"></script>
     <script>
         feather.replace()
     </script>
-
     <!-- Disable Darkreader -->
-
     <script>
         const observer = new MutationObserver((mutationsList) => {
             for(const mutation of mutationsList) {
